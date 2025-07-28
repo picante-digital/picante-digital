@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +7,23 @@
     <title>Picante Digital</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        :root {
+            --green: #07BC0C;
+            --red: #E74C3C;
+            --navy: #1C3144;
+            --yellow: #FFBA08;
+            --grey: #A2AEBB;
+        }
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
             background-color: #ffffff;
-            color: #1C3144;
+            color: var(--navy);
+            line-height: 1.6;
         }
         header {
-            background-color: #FFBA08;
-            color: #1C3144;
+            background-color: var(--yellow);
+            color: var(--navy);
             padding: 60px 20px;
             text-align: center;
         }
@@ -21,13 +31,16 @@
             margin: 0;
             font-size: 2.5em;
         }
+        header p {
+            font-size: 1.2em;
+        }
         section {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
         h2 {
-            color: #E74C3C;
+            color: var(--red);
         }
         .services {
             display: flex;
@@ -35,20 +48,32 @@
             gap: 20px;
         }
         .service {
-            flex: 1 1 250px;
-            background-color: #A2AEBB;
+            flex: 1 1 280px;
+            background-color: var(--grey);
             padding: 20px;
             border-radius: 8px;
-            color: #1C3144;
+            color: var(--navy);
+        }
+        .method-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .method-table th, .method-table td {
+            border: 1px solid var(--grey);
+            padding: 10px;
+            text-align: left;
+        }
+        .contact p {
+            margin: 8px 0;
         }
         footer {
-            background-color: #1C3144;
+            background-color: var(--navy);
             color: #ffffff;
             text-align: center;
             padding: 20px;
         }
         a {
-            color: #07BC0C;
+            color: var(--green);
             text-decoration: none;
         }
     </style>
@@ -57,12 +82,14 @@
 
 <header>
     <h1>Designing Digital Momentum</h1>
-    <p>Fueling Growth Through Digital Precision</p>
+    <p>Smart, elegant design that thinks about your users first.</p>
 </header>
 
 <section>
     <h2>About Us</h2>
-    <p>Picante Digital is a growth-focused digital agency helping small and medium businesses thrive through expertly crafted web design, mobile solutions, and multi-channel marketing. We combine data-driven creativity with future-ready strategies to deliver real results.</p>
+    <p>We are a team of experienced designers and marketers focused on the intersection of aesthetics, usability, and performance. We build with a mobile-first mindset, ensuring your digital presence looks stunning on every screen.</p>
+    <p>In today’s digital age, first impressions are formed online. You have just seconds to make an impact—effective design is good business.</p>
+    <p>We work with organizations of all sizes—from scrappy start-ups to leading brands in the private, public, and social sectors.</p>
 </section>
 
 <section>
@@ -70,27 +97,43 @@
     <div class="services">
         <div class="service">
             <h3>Web, Apps & Mobile</h3>
-            <p>User-first design that aligns with your business goals and delivers seamless digital experiences.</p>
+            <p>Smart, elegant design that thinks about your user first. Responsive websites and apps built for performance and conversion. Platforms: Webflow, WordPress, Squarespace. AMP and native mobile app development available.</p>
         </div>
         <div class="service">
             <h3>Digital Marketing</h3>
-            <p>Custom multi-channel strategies to promote your brand and engage your audience effectively.</p>
+            <p>SEO, PPC, Social Media, and Content Marketing. Integrated multi-channel strategies tailored to your audience. Designed to acquire, engage, and retain customers.</p>
         </div>
         <div class="service">
             <h3>Support & Consulting</h3>
-            <p>Reliable technical support and IT consultancy from experienced engineers who understand your needs.</p>
+            <p>Expert IT consulting and technical support. Infrastructure optimization and problem-solving. Ongoing support to improve your technology environment.</p>
         </div>
     </div>
 </section>
 
 <section>
+    <h2>Our Method</h2>
+    <p>We build long-term relationships through informed design, actionable strategy, and timely execution.</p>
+    <table class="method-table">
+        <tr><th>Step</th><th>Description</th></tr>
+        <tr><td>Discover</td><td>We explore your business and goals to create a tailored plan.</td></tr>
+        <tr><td>Design</td><td>We collaborate to bring your vision to life with custom design.</td></tr>
+        <tr><td>Develop</td><td>We build using modern technologies for speed and quality.</td></tr>
+        <tr><td>Deploy</td><td>We launch smoothly, handling hosting, DNS, and setup.</td></tr>
+        <tr><td>Delight</td><td>We provide ongoing support and optimization post-launch.</td></tr>
+    </table>
+</section>
+
+<section class="contact">
     <h2>Contact Us</h2>
+    <p>We're always excited to receive new challenges, stretch our know-how, and distill requirements into solutions that drive your business forward.</p>
+    <p><strong>Is there a challenge your organisation needs help solving?</strong><br>We’d love to discuss how we can work with you.</p>
     <p>Email: <a href="mailto:hello@picantedigital.com">hello@picantedigital.com</a></p>
     <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2024 Picante Digital. All rights reserved.</p>
+    <p>&copy; 2025 Picante Digital | Webflow-powered | Privacy Policy</p>
+    <p><a href="#top">Home</a> | <a href="#services">Services</a> | <a href="#method">Method</a> | <a href="#about">About</a> | <a href="#contact">Contact</a></p>
 </footer>
 
 </body>
